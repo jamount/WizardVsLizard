@@ -584,6 +584,7 @@ GameObject:
   - component: {fileID: 1238613253}
   - component: {fileID: 1238613255}
   - component: {fileID: 1238613254}
+  - component: {fileID: 1238613256}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -623,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -648,6 +649,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238613252}
   m_CullTransparentMesh: 0
+--- !u!95 &1238613256
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238613252}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 704b9e5b225b3a64e978322f98b519c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1404919049
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +686,7 @@ GameObject:
   - component: {fileID: 1404919057}
   - component: {fileID: 1404919058}
   - component: {fileID: 1404919059}
+  - component: {fileID: 1404919060}
   m_Layer: 10
   m_Name: Hero
   m_TagString: Player
@@ -814,11 +835,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee4ea0404144742b2d48189c084f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manaBar: {fileID: 1891612457}
+  mBarBackground: {fileID: 1238613256}
   bulletPrefab: {fileID: 7362160637321872189, guid: 3b1f7af26ee6dec489a5ef67b819a688,
     type: 3}
   bulletSpawn: {fileID: 1442245661}
   fireTime: 0.5
-  manaCost: 30
+  manaCost: 10
 --- !u!95 &1404919057
 Animator:
   serializedVersion: 3
@@ -873,6 +896,35 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1404919058}
         m_MethodName: SendHealthData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &1404919060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404919049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2346a563f2c63cc4194a4fa53023b1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: 100
+  onUseMana:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1404919058}
+        m_MethodName: SendManaData
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1029,7 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 516786693}
-  manaBar: {fileID: 0}
+  manaBar: {fileID: 1891612457}
   scoreText: {fileID: 572034331}
   playerScore: 0
 --- !u!1 &1639538524

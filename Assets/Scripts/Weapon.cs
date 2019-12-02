@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 public class Weapon : MonoBehaviour
 {
+    public Slider manaBar;
+    public Animator mBarBackground;
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     public float fireTime = 0.5f;
@@ -12,10 +15,11 @@ public class Weapon : MonoBehaviour
     }
     private void Fire()
     {
+        
         isFiring = true;
         Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        SendMessage("TakeMana", manaCost, SendMessageOptions.DontRequireReceiver);
-        // need help getting mana to work
+        SendMessage("TakeMana", manaCost);
+        
 
         if (GetComponent<AudioSource>() != null)
         {
@@ -29,7 +33,14 @@ public class Weapon : MonoBehaviour
         {
             if (!isFiring)
             {
-                Fire();
+                if(manaBar.value >= manaCost)
+                {
+                    Fire();
+                }
+                else
+                {
+                    mBarBackground.SetTrigger("ManaEmpty");
+                }
                 
             }
         }
