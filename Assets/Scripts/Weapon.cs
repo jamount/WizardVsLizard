@@ -5,6 +5,7 @@ public class Weapon : MonoBehaviour
     public Transform bulletSpawn;
     public float fireTime = 0.5f;
     private bool isFiring = false;
+    public int manaCost;
     private void SetFiring()
     {
         isFiring = false;
@@ -13,6 +14,9 @@ public class Weapon : MonoBehaviour
     {
         isFiring = true;
         Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        SendMessage("TakeMana", manaCost, SendMessageOptions.DontRequireReceiver);
+        // need help getting mana to work
+
         if (GetComponent<AudioSource>() != null)
         {
             GetComponent<AudioSource>().Play();
@@ -26,6 +30,7 @@ public class Weapon : MonoBehaviour
             if (!isFiring)
             {
                 Fire();
+                
             }
         }
     }

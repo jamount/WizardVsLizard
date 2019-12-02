@@ -3,6 +3,8 @@ public class Player : MonoBehaviour
 {
     public delegate void UpdateHealth(int newHealth);
     public static event UpdateHealth OnUpdateHealth;
+    public delegate void UpdateMana(int newMana);
+    public static event UpdateMana OnUpdateMana;
 
 
     private Animator gunAnim;
@@ -26,6 +28,14 @@ public class Player : MonoBehaviour
         if (OnUpdateHealth != null)
         {
             OnUpdateHealth(health);
+        }
+    }
+
+    public void SendManaData(int mana)
+    {
+        if (OnUpdateMana != null)
+        {
+            OnUpdateMana(mana);
         }
     }
 
