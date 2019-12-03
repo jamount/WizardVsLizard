@@ -1518,7 +1518,7 @@ PrefabInstance:
     - target: {fileID: 287824346663048438, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
         type: 3}
       propertyPath: m_Name
-      value: Zombie
+      value: standard Lizard
       objectReference: {fileID: 0}
     - target: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
         type: 3}
@@ -1574,16 +1574,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7052716996912106563, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7052716996912106563, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.84
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
