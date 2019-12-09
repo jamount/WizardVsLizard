@@ -6,11 +6,12 @@ using System;
 public class ManaSystem : MonoBehaviour
 {
     public float mana;
-
+    public float maxMana;
 
 
 
     public OnDamagedEvent onUseMana;
+    
     
 
  
@@ -24,6 +25,14 @@ public class ManaSystem : MonoBehaviour
         }
 
 
+    }
+    public void RegenMana(int regenRate)
+    {
+        if (mana <= maxMana)
+        {
+            mana += regenRate * Time.deltaTime;
+            onUseMana.Invoke(Convert.ToInt32(mana));
+        }
     }
 }
     

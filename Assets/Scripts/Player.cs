@@ -5,6 +5,8 @@ public class Player : MonoBehaviour
     public static event UpdateHealth OnUpdateHealth;
     public delegate void UpdateMana(int newMana);
     public static event UpdateMana OnUpdateMana;
+    public int mRegenRate = 5;
+    public int hRegenRate = 1;
 
 
     private Animator gunAnim;
@@ -22,6 +24,12 @@ public class Player : MonoBehaviour
         {
             gunAnim.SetBool("isFiring", false);
         }
+        
+        
+        SendMessage("RegenMana", mRegenRate);
+        SendMessage("RegenHealth", hRegenRate);
+        
+       
     }
     public void SendHealthData(int health)
     {

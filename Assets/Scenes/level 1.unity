@@ -873,6 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0f7176f929ab2489d773b6f5835fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mRegenRate: 5
 --- !u!114 &1404919059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mana: 100
+  maxMana: 100
   onUseMana:
     m_PersistentCalls:
       m_Calls:
@@ -1502,7 +1504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089424631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8448698, y: 4.1652527, z: -12.049092}
+  m_LocalPosition: {x: 2.48, y: 4.1652527, z: -12.049092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1523,12 +1525,12 @@ PrefabInstance:
     - target: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.94
       objectReference: {fileID: 0}
     - target: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b,
         type: 3}

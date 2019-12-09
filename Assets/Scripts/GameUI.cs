@@ -25,10 +25,12 @@ public class GameUI : MonoBehaviour
     private void UpdateManaBar (int mana)
     {
         manaBar.value = mana;
+        
     }
     private void UpdateScore(int theScore)
     {
         playerScore += theScore;
         scoreText.text = "SCORE: " + playerScore.ToString();
     }
+    
 }
