@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-public class Bullet : MonoBehaviour
+public class EnergyBlastBullet : MonoBehaviour
 {
     public float moveSpeed = 100.0f;
     public int damage = 1;

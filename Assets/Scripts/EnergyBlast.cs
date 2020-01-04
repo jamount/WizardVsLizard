@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-public class Weapon : MonoBehaviour
+public class EnergyBlast : MonoBehaviour
 {
     public Slider manaBar;
     public Animator mBarBackground;
