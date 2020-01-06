@@ -5,8 +5,8 @@ public class Player : MonoBehaviour
     public static event UpdateHealth OnUpdateHealth;
     public delegate void UpdateMana(int newMana);
     public static event UpdateMana OnUpdateMana;
-    public int mRegenRate = 5;
-    public int hRegenRate = 1;
+    public int mRegenRate;
+    public int hRegenRate;
 
 
     private Animator gunAnim;
@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
         
         
         SendMessage("RegenMana", mRegenRate);
+
+        
         SendMessage("RegenHealth", hRegenRate);
         
        

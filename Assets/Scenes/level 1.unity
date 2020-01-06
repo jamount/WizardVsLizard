@@ -1266,7 +1266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263894878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.96, y: 20.13, z: -399.79517}
+  m_LocalPosition: {x: -1.43, y: 26.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6924,7 +6924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611209479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.75, y: -0.28, z: -399.79517}
+  m_LocalPosition: {x: 26.29, y: -1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8552,7 +8552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801419130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.69, y: -0.36, z: -399.79517}
+  m_LocalPosition: {x: -28.42, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17936,9 +17936,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 150
   m_WholeNumbers: 1
-  m_Value: 100
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -19883,57 +19883,196 @@ MonoBehaviour:
   waves:
   - name: Wave 1
     enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 10
+    rate1: 1
+    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count2: 5
+    rate2: 1
+    enemy3: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
+      type: 3}
+    count3: 0
+    rate3: 1
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count4: 0
+    rate4: 1
+    enemy5: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
+      type: 3}
+    count5: 0
+    rate5: 1
+  - name: wave 2
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 0
+    rate1: 1
+    enemy2: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
+      type: 3}
+    count2: 4
+    rate2: 1
+    enemy3: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
+      type: 3}
+    count3: 20
+    rate3: 2
+    enemy4: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count4: 0
+    rate4: 0
+    enemy5: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
+      type: 3}
+    count5: 0
+    rate5: 0
+  - name: wave 3
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 15
+    rate1: 1
+    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count2: 0
+    rate2: 1
+    enemy3: {fileID: 0}
+    count3: 0
+    rate3: 0
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count4: 5
+    rate4: 1
+    enemy5: {fileID: 0}
+    count5: 0
+    rate5: 0
+  - name: wave 4
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 15
+    rate1: 1
+    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count2: 5
+    rate2: 1
+    enemy3: {fileID: 0}
+    count3: 0
+    rate3: 0
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count4: 5
+    rate4: 1
+    enemy5: {fileID: 0}
+    count5: 0
+    rate5: 0
+  - name: wave 5
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
     count1: 5
     rate1: 1
     enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
       type: 3}
-    count2: 2
+    count2: 10
     rate2: 1
     enemy3: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
       type: 3}
-    count3: 3
+    count3: 8
     rate3: 1
     enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
       type: 3}
-    count4: 2
+    count4: 0
     rate4: 1
     enemy5: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
       type: 3}
     count5: 1
     rate5: 1
-  - name: wave 2
-    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
-    count1: 5
-    rate1: 1
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-    enemy4: {fileID: 0}
-    count4: 0
-    rate4: 0
-    enemy5: {fileID: 0}
-    count5: 0
-    rate5: 0
-  - name: wave 3
-    enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+  - name: wave 6
+    enemy1: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
       type: 3}
-    count2: 8
+    count1: 12
+    rate1: 2
+    enemy2: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count2: 5
+    rate2: 1
+    enemy3: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
+      type: 3}
+    count3: 1
+    rate3: 1
+    enemy4: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count4: 5
+    rate4: 1
+    enemy5: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count5: 1
+    rate5: 1
+  - name: wave 7
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 30
+    rate1: 2
+    enemy2: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
+      type: 3}
+    count2: 2
     rate2: 1
     enemy3: {fileID: 0}
     count3: 0
     rate3: 0
-    enemy4: {fileID: 0}
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
     count4: 0
-    rate4: 0
+    rate4: 1
     enemy5: {fileID: 0}
     count5: 0
     rate5: 0
+  - name: wave 8
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 15
+    rate1: 1
+    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count2: 0
+    rate2: 1
+    enemy3: {fileID: 0}
+    count3: 0
+    rate3: 0
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count4: 5
+    rate4: 1
+    enemy5: {fileID: 0}
+    count5: 0
+    rate5: 0
+  - name: wave 9
+    enemy1: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
+      type: 3}
+    count1: 3
+    rate1: 1
+    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count2: 30
+    rate2: 2
+    enemy3: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count3: 10
+    rate3: 1
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count4: 5
+    rate4: 1
+    enemy5: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
+      type: 3}
+    count5: 5
+    rate5: 0
+  - name: Final Wave
+    enemy1: {fileID: 287824346663048972, guid: ea7a5b427cf0d6d42b2bec89ded1845b, type: 3}
+    count1: 15
+    rate1: 1
+    enemy2: {fileID: 8447208597273476034, guid: d0752ba191960574699a93fbc2ae7e10,
+      type: 3}
+    count2: 15
+    rate2: 1
+    enemy3: {fileID: 3896200526143165064, guid: 03b5637695939bc46903bb685a673c08,
+      type: 3}
+    count3: 15
+    rate3: 1
+    enemy4: {fileID: 3099371390334311348, guid: 505a5303b1786fc4eb646749a0b7877b,
+      type: 3}
+    count4: 15
+    rate4: 1
+    enemy5: {fileID: 4509078077674492959, guid: df1d187df66b17944b12de560d096ec2,
+      type: 3}
+    count5: 5
+    rate5: 1
   spawnPoints:
   - {fileID: 263894879}
   - {fileID: 611209480}
@@ -21036,7 +21175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125447005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.12, y: -18.92, z: -399.79517}
+  m_LocalPosition: {x: -1.59, y: -25.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21139,5 +21278,10 @@ PrefabInstance:
       propertyPath: mBarBackground
       value: 
       objectReference: {fileID: 1238613256}
+    - target: {fileID: 5882526781488877488, guid: be7272945ea5e8047993fcb72f188d33,
+        type: 3}
+      propertyPath: hRegenRate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be7272945ea5e8047993fcb72f188d33, type: 3}

@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0f7176f929ab2489d773b6f5835fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRegenRate: 5
-  hRegenRate: 1
+  mRegenRate: 7
+  hRegenRate: 2
 --- !u!114 &5882526781488877489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mana: 100
-  maxMana: 100
+  maxMana: 150
   onUseMana:
     m_PersistentCalls:
       m_Calls:

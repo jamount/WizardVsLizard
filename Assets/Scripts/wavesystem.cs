@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class wavesystem : MonoBehaviour
 {
@@ -56,6 +57,7 @@ public class wavesystem : MonoBehaviour
         {
             if (!EnemyIsAlive())
             {
+
                 WaveCompleted();
             }
             else
@@ -87,8 +89,7 @@ public class wavesystem : MonoBehaviour
 
         if (nextWave + 1 > waves.Length - 1)
         {
-            nextWave = 0;
-            Debug.Log("ALL WAVES COMPLETE! back to wave 1");
+            SceneManager.LoadScene("You Win");
         }
         else
         {

@@ -6,7 +6,7 @@ using System;
 public class OnDamagedEvent : UnityEvent<int> { }
 public class HealthSystem : MonoBehaviour
 {
-    public float health = 10;
+    public float health = 100;
     public float maxHealth;
     public UnityEvent onDie;
     public OnDamagedEvent onDamaged;
@@ -21,7 +21,14 @@ public class HealthSystem : MonoBehaviour
     }
     public void RegenHealth(int regenRate)
     {
-        health += regenRate * Time.deltaTime;
+
+            health += regenRate * Time.deltaTime;
+        if(health > 100)
+        {
+            health = 100;
+        }
         onDamaged.Invoke(Convert.ToInt32(health));
+        
+        
     }
 }

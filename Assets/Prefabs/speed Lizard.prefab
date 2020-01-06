@@ -257,7 +257,7 @@ MonoBehaviour:
   onSpawn:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7383752710540721422}
         m_MethodName: SetTarget
         m_Mode: 0
         m_Arguments:

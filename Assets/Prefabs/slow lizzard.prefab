@@ -198,7 +198,7 @@ MonoBehaviour:
   onSpawn:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: -581189658979098806}
         m_MethodName: SetTarget
         m_Mode: 0
         m_Arguments:
@@ -293,7 +293,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  speed: 2
+  speed: 2.5
   orientation: 1
   enableRotation: 1
   rotationSpeed: 10
