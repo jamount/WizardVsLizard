@@ -89,13 +89,13 @@ GameObject:
   - component: {fileID: 5095722208425374902}
   - component: {fileID: 5766864087683149982}
   - component: {fileID: 7125570579123019174}
-  - component: {fileID: 8557980316486936711}
+  - component: {fileID: 7383752710540721422}
   - component: {fileID: 8557980316486936708}
   - component: {fileID: 8557980316486936709}
   - component: {fileID: 8557980316486936706}
   m_Layer: 9
   m_Name: speed Lizard
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   onSpawn:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8557980316486936711}
+      - m_Target: {fileID: 0}
         m_MethodName: SetTarget
         m_Mode: 0
         m_Arguments:
@@ -314,7 +314,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8557980316486936711
+--- !u!114 &7383752710540721422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

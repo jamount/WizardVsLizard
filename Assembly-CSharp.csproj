@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\TimerEvent.cs" />
     <Compile Include="Assets\Scripts\TopDownCharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\wavesystem.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\WeaponPickup.cs" />
     <Reference Include="Unity.Timeline.Editor">
