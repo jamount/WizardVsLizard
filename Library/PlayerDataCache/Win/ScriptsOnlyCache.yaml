@@ -37,14 +37,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -1070,4 +1067,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Game Over.unity
   - Assets/Scenes/level 1.unity
   - Assets/Scenes/You Win.unity
-  playerPath: C:/Users/jmountford/Documents/WizardsVsLizards.exe
+  playerPath: C:/Users/jmountford/Desktop/my game/WizardsVsLizards.exe

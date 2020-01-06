@@ -21263,6 +21263,11 @@ PrefabInstance:
       propertyPath: mBarBackground
       value: 
       objectReference: {fileID: 1238613256}
+    - target: {fileID: 5882526781488877490, guid: be7272945ea5e8047993fcb72f188d33,
+        type: 3}
+      propertyPath: manaCost
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5882526781488877489, guid: be7272945ea5e8047993fcb72f188d33,
         type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -21278,6 +21283,11 @@ PrefabInstance:
       propertyPath: mBarBackground
       value: 
       objectReference: {fileID: 1238613256}
+    - target: {fileID: 5882526781488877495, guid: be7272945ea5e8047993fcb72f188d33,
+        type: 3}
+      propertyPath: manaCost
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5882526781488877488, guid: be7272945ea5e8047993fcb72f188d33,
         type: 3}
       propertyPath: hRegenRate
