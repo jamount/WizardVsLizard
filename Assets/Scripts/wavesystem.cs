@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class wavesystem : MonoBehaviour
 {
@@ -35,11 +36,13 @@ public class wavesystem : MonoBehaviour
 
     public Wave[] waves;
     private int nextWave = 0;
+    private int waveCount = 1;
 
     public Transform[] spawnPoints;
 
     public float timeBetweenWaves = 5f;
     public float waveCountdown;
+    public Text waveSign;
 
     private float searchCountdown = 1f;
 
@@ -47,6 +50,7 @@ public class wavesystem : MonoBehaviour
 
     private void Start()
     {
+        
         waveCountdown = timeBetweenWaves;
 
     }
@@ -82,6 +86,9 @@ public class wavesystem : MonoBehaviour
 
     void WaveCompleted()
     {
+        waveCount++;
+        waveSign.text = "WAVE " + waveCount;
+        
         Debug.Log("Wave Completed!");
 
         state = SpawnState.COUNTING;

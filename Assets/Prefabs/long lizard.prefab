@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60df87fd882b55b46b01b959124d8c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
+  health: 5
   maxHealth: 0
   onDie:
     m_PersistentCalls:
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd6b767c3c855de4c957b26e5dd8fb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 10
+  score: 50
 --- !u!95 &4385013025449770448
 Animator:
   serializedVersion: 3
@@ -293,7 +293,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  speed: 3
+  speed: 6
   orientation: 1
   enableRotation: 1
   rotationSpeed: 10
