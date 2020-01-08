@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - GameManager
     - GameUI
     - HealthSystem
+    - HighScoreUI
     - HurtTrigger
     - ManaBomb
     - ManaBombBlast
@@ -43,8 +44,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -100,6 +103,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11368}
     - Class: 114
       Script: {instanceID: 11814}
+    - Class: 114
+      Script: {instanceID: 24122}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1116,10 +1121,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5aeb719b359fc9a92cf62041dec637dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighScoreUI
   platform: 5
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Game Over.unity
   - Assets/Scenes/level 1.unity
   - Assets/Scenes/You Win.unity
-  playerPath: C:/Users/jmountford/Desktop/Wizards vs Lizards/WizardsVsLizards.exe
+  playerPath: C:/Users/jmountford/Desktop/WvL/WizardsVsLizards.exe
